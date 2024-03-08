@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4a69bd;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  height: 100vh;
+  flex-direction: column;
+ 
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:3rem;
+}
+
+.btn{
+  background-color: #1899d6;
+  border: solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 4px 2px;
+  outline: none;
+  overflow: visible;
+  padding: 10px 16px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+button::after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+#no-button {
+  position: absolute;
+  transition: 0.5s;
+  margin-left: 150px;
+}
+
+#yes-button {
+  position: absolute;
+}
+h1 {
+  font-family: "Cookie", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width:1220px){
+  html{font-size: 14px;}
+}
+@media screen and (max-width:980px){
+  html{ font-size: 13px;}
+}
+@media screen and (max-width:767px){
+  html{ font-size: 10px;}}
+  @media screen and (max-width:460px){
+    .buttons {flex-direction: column;}
+  }
